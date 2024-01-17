@@ -1,4 +1,4 @@
-# QR code component solution
+# QR code component
 
 ### Screenshot
 
