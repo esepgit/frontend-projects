@@ -3,5 +3,3 @@
 ### Screenshot
 
 ![](./design/desktop-preview.jpg)
-
-### Live
