@@ -1,0 +1,14 @@
+{
+  "name": "recipe-page-main",
+  "version": "1.0.0",
+  "description": "A recipe page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esepbit",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
