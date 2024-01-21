@@ -1,6 +1,6 @@
 # Social links profile
 
-[social links preview](./assets/preview.gif)
+<img src="./assets/preview.gif" alt="frontend preview" width="500px" height="450px" />
 
 ## Technologies
 
