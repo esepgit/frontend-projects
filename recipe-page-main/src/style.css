@@ -563,6 +563,11 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -571,12 +576,28 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
 
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[1710px\] {
+  max-height: 1710px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-\[740px\] {
+  max-width: 740px;
 }
 
 .list-decimal {
@@ -587,8 +608,28 @@ video {
   list-style-type: disc;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .border-b {
@@ -600,8 +641,22 @@ video {
   background-color: hsl(330 100% 98% / var(--tw-bg-opacity));
 }
 
+.bg-eggshell {
+  --tw-bg-opacity: 1;
+  background-color: hsl(30 54% 90% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-8 {
@@ -619,6 +674,16 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[124px\] {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -629,6 +694,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -715,4 +784,35 @@ body {
 
 .marker\:text-dark-raspberry::marker {
   color: hsl(332 51% 32% );
+}
+
+@media (min-width: 768px) {
+  .md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+
+  .md\:max-w-\[90\%\] {
+    max-width: 90%;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .md\:py-\[124px\] {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
 }
