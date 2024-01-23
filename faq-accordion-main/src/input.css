@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: repeat-x;
+    transition: 0.5s;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

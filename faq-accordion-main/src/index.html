@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>FAQ accordion | Esepbit</title>
+</head>
+<body class="bg-mobile lg:bg-desktop py-[145px] px-[25px] flex flex-col justify-center items-center">
+  <div class="w-[330px] lg:w-[600px] bg-my-white rounded-lg p-[25px]">
+    <header>
+      <div class="flex mb-[10px]">
+        <img class="w-[22px]" src="../assets/images/icon-star.svg" alt="star icon">
+        <h1 class="text-my-dark-purple text-3xl font-extrabold ml-5">FAQs</h1>
+      </div>
+    </header>
+    <div>
+      <div class="panel">
+        <div class="panel-header flex justify-between items-center h-[75px]">
+          <button class="hover:text-my-bright-purple btn-accordion font-bold text-left w-[210px]">What is Frontend Mentor, and how will it help me?</button>
+          <img id="minus-1" src="../assets/images/icon-minus.svg" alt="icon minus">
+          <img id="plus-1" class="hidden" src="../assets/images/icon-plus.svg" alt="icon plus">
+        </div>
+        <p id="parr-1" class="pb-[20px] text-my-grayish-purple text-sm">Frontend Mentor offers realistic coding challenges to help developers improve their 
+  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+  all levels and ideal for portfolio building.</p>
+      </div>
+      <hr>
+
+      <div class="panel">
+        <div class="panel-header flex justify-between items-center h-[75px]">
+          <button class="hover:text-my-bright-purple btn-accordion font-bold text-left w-[210px]">Is Frontend Mentor free?</button>
+          <img id="minus-2" class="hidden" src="../assets/images/icon-minus.svg" alt="icon minus">
+          <img id="plus-2" src="../assets/images/icon-plus.svg" alt="icon plus">
+        </div>
+        <p id="parr-2" class="hidden pb-[20px] text-my-grayish-purple text-sm">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+  option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+      <hr>
+
+      <div class="panel">
+        <div class="panel-header flex justify-between items-center h-[75px]">
+          <button class="hover:text-my-bright-purple btn-accordion font-bold text-left w-[210px]">Can I use Frontend Mentor projects in my portfolio?</button>
+          <img id="minus-3" class="hidden" src="../assets/images/icon-minus.svg" alt="icon minus">
+          <img id="plus-3" src="../assets/images/icon-plus.svg" alt="icon plus">
+        </div>
+        <p id="parr-3" class="hidden pb-[20px] text-my-grayish-purple text-sm">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!</p>
+      </div>
+      <hr>
+
+      <div class="panel">
+        <div class="panel-header flex justify-between items-center h-[75px]">
+          <button class="hover:text-my-bright-purple btn-accordion font-bold text-left w-[210px]">How can I get help if I'm stuck on a challenge?</button>
+          <img id="minus-4" class="hidden" src="../assets/images/icon-minus.svg" alt="icon minus">
+          <img id="plus-4" src="../assets/images/icon-plus.svg" alt="icon plus">
+        </div>
+        <p id="parr-4" class="hidden pb-[20px] text-my-grayish-purple text-sm">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members.</p>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="attribution mt-4">
+    Coded by <a href="https://github.com/esepgit">Esepbit</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
