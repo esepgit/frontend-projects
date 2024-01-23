@@ -685,6 +685,10 @@ body {
     width: 600px;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:bg-desktop {
     background-image: url('../assets/images/background-pattern-desktop.svg');
   }
