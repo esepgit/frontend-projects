@@ -2,7 +2,7 @@
 
 ## Preview 
 
-<img src='./src/assets/images/preview.gif' alt='preview' />
+<img src='./src/assets/images/preview.gif' alt='preview' width='500px' />
 
 ## Technologies
 - HTML
