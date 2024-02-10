@@ -13,7 +13,7 @@ function PokemonPreview({ pokemonURL, onClick }) {
   }, []);
   
   return (
-    <article onClick={onClick} className="cursor-pointer border-2 hover:border-slate-200 border-transparent shadow-slate-400/10 shadow-lg capitalize text-center bg-white rounded-[30px] relative font-semibold pb-4 group grid gap-2">
+    <article onClick={() => onClick(pokemon)} className="cursor-pointer border-2 hover:border-slate-200 border-transparent shadow-slate-400/10 shadow-lg capitalize text-center bg-white rounded-[30px] relative font-semibold pb-4 group grid gap-2">
       <header className="h-9">
         <img
           className="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 group-hover:scale-110 transition-transform pixelated"
