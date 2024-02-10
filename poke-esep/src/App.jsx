@@ -5,14 +5,15 @@ import ModalPokemon from "./components/ModalPokemon";
 import usePokemonContext from "./hooks/usePokemonContext";
 
 function App() {
-  const { showDetailPokemon, closePokemonDetail } = usePokemonContext()
+  const { showDetailPokemon, closePokemonDetail, pokemonDetail } =
+    usePokemonContext();
 
   return (
     <section className="bg-[#f6f8fc] h-screen overflow-y-auto font-outfit">
       <main className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_350px]">
         <Pokemons />
         <Aside />
-        <ModalPokemon showModal={showDetailPokemon} onCloseModal={closePokemonDetail} />
+        <ModalPokemon showModal={showDetailPokemon} onCloseModal={closePokemonDetail} pokemon={pokemonDetail} />
       </main>
     </section>
   );

@@ -5,8 +5,8 @@ const formatStats = (stats) => {
     hp: "HP",
     attack: "ATK",
     defense: "DEF",
-    special_attack: "spA",
-    special_defense: "SpD",
+    "special-attack": "SpA",
+    "special-defense": "SpD",
     speed: "SPD",
   };
   const newStats = stats.map(({ stat, base_stat }) => ({
