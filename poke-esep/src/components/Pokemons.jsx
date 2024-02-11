@@ -38,7 +38,7 @@ function Pokemons() {
   return (
     <section className="p-4 py-5 ">
       <form>
-        <div className="bg-white p-2 rounded-2xl text-lg text-center">
+        <div className="bg-white p-2 rounded-2xl text-lg">
           <input
             value={pokemonName}
             onChange={(e) => setPokemonName(e.target.value.toLowerCase())}
