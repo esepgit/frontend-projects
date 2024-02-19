@@ -23,7 +23,7 @@ const PokemonProvider = ({ children }) => {
       weight,
       stats: formatStats(stats),
       types: formatTypes(types),
-      abilities: formatAbilities(abilities),
+      abilities: formatAbilities(abilities), 
       description: getPokemonDescription(dataSpecies),
       evolutions,
       image: getImageByPokemon(pokemonInfo.sprites)

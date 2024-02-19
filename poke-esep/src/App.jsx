@@ -2,7 +2,7 @@
 import Pokemons from "./components/Pokemons";
 import Aside from "./components/Aside";
 import ModalPokemon from "./components/ModalPokemon";
-import usePokemonContext from "./hooks/usePokemonContext";
+import usePokemonContext from "./hooks/usePokemonContext"; 
 
 function App() {
   const { showDetailPokemon, closePokemonDetail, pokemonDetail, isLoading } =

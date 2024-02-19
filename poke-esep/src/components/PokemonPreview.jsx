@@ -2,9 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { colorByType } from "../constants/pokemon";
 
-function PokemonPreview({ pokemonURL, onClick }) {
+function PokemonPreview({ pokemonURL, onClick }) { 
   const [pokemon, setPokemon] = useState(null);
-
+ 
   useEffect(() => {
     axios
       .get(pokemonURL)
