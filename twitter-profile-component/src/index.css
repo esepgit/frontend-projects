@@ -23,6 +23,10 @@ body {
   justify-content: space-between;
 }
 
+.tw-followCard:hover {
+  background-color: #333;
+}
+
 .tw-followCard-header {
   display: flex;
   align-items: center;
