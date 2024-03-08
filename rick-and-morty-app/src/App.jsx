@@ -1,28 +1,48 @@
-import { useEffect, useState } from "react"
-import Navbar from "./components/Navbar"
-import initialData from '../db.json'
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 import CharactersList from "./components/CharactersList";
+import Pagination from "./components/Pagination";
 
 function App() {
-  const [characters, setCharacters] = useState(initialData.results)
-  console.log(characters);
+  const [characters, setCharacters] = useState([]);
+  const [info, setInfo] = useState({});
 
-  // useEffect(() => {
-  //   fetch("https://rickandmortyapi.com/api/character")
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       setCharacters(data.results);
-  //       console.log(data)
-  //     })
-  //     .catch(error => console.log(error))
-  // }, [])
+  const url = "https://rickandmortyapi.com/api/character";
+
+  const fetchCharacter = (url) => {
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          setCharacters(data.results);
+          setInfo(data.info)
+        })
+        .catch(error => console.log(error))
+  };
+
+  const onPrevius = () => {
+    fetchCharacter(info.prev);
+  };
+
+  const onNext = () => {
+    fetchCharacter(info.next);
+  };
+
+  useEffect(() => {
+    fetchCharacter(url)
+  }, [])
 
   return (
     <div>
       <Navbar />
       <CharactersList characters={characters} />
+      <Pagination
+        prev={info.prev}
+        next={info.next}
+        onPrevius={onPrevius}
+        onNext={onNext}
+      />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

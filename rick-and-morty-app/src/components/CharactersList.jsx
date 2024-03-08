@@ -1,12 +1,16 @@
-
-function CharactersList({characters = []}) {
-
+function CharactersList({ characters = [] }) {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] ">
+    <div className="mt-4 mx-8 grid grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] gap-4">
       {characters.map((c) => (
         <div key={c.id}>
-          <div>
+          <div className="border h-[310px]">
             <img src={c.image} />
+            <div>
+              <p className="font-semibold">{c.name}</p>
+              <hr />
+              <p>specie: {c.species}</p>
+              <p>location: {c.location.name}</p>
+            </div>
           </div>
         </div>
       ))}
@@ -14,4 +18,4 @@ function CharactersList({characters = []}) {
   );
 }
 
-export default CharactersList
+export default CharactersList;
